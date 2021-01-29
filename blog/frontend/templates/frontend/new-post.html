@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/new-post.css' %}">
+    <title>Create a new post</title>
+</head>
+<body>
+
+    <h2>Create a new post</h2>
+
+    <div class="container" id="form">
+        
+        <form method="POST" action="/get-posts/">
+            {% csrf_token %}
+            <legend>Title</legend>
+            <input type="text" id="title" required name="title">
+            <br>
+            <legend>Author</legend>
+            <input type="text" id="author" required name="author">
+            <br>
+            <legend>Content</legend>
+            <textarea name="content" id="content" required cols="30" rows="10"></textarea>
+            <input id="submit" type="submit">
+            
+        </form>
+    </div>
+
+    <script src="{% static 'js/createPost.js' %}"></script>
+
+</body>
+</html>

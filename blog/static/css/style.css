@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+html,
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin-left: 100px;
+	margin-top: 26px;
+	display: flex-wrap;
+	margin-right: 100px;
+	position: relative;
+}
+
+.get-post-btn {
+	background-color: #2c5aaf;
+	border-color: #2c5aaf;
+	padding: 5px;
+	border-radius: 6px;
+	color: white;
+}
+
+.get-post-btn:active {
+	position: relative;
+	bottom: -4px;
+	left: 2px;
+}
+
+.create-post-btn {
+	background-color: #4ba716;
+	border-color: #4ba716;
+	padding: 5px;
+	border-radius: 6px;
+	color: white;
+}
+
+.create-post-btn:active {
+	position: relative;
+	bottom: -4px;
+	left: 2px;
+}
+
+.posts {
+	margin-right: 100px;
+}

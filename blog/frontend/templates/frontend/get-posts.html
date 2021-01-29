@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Get Posts from api</title>
+</head>
+<body>
+    <h1>Get Blog posts from api</h1>
+    <br>
+    <hr>
+    <h2>Posts</h2>
+    <button class="get-post-btn" id="get-post">Get one post form posts</button>
+    <a href="{% url 'new-post' %}"><button class="create-post-btn">Create new post &plus;</button></a>
+
+    <div id="posts-div" class="posts">
+        <p id="post-p"></p>
+    </div>
+
+    <script src="{% static 'js/getOnePost.js' %}"></script>
+</body>
+</html>
